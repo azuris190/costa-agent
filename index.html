@@ -102,7 +102,10 @@ details{border-bottom:1px solid var(--line);padding:14px 0}details:last-child{bo
 #toast.on{opacity:1}
 :focus-visible{outline:2px solid var(--sea);outline-offset:2px}
 .empty{text-align:center;padding:28px 16px}.empty>i{font-size:34px;color:var(--bou)}
+:root.light{--bg:#F5F7F7;--card:#fff;--ink:#0F2633;--ink2:#5A6A72;--line:#E1E6E7;--fill:#ECF0F1;--sea:#1C5A85;--bou:#C2185B;--bous:#FBE7F0;--ok:#2E7D4F;--warn:#A0640F;--bad:#B3261E;color-scheme:light}
+:root.dark{--bg:#0A1820;--card:#11232C;--ink:#E9F0F2;--ink2:#93A5AD;--line:#1F3641;--fill:#172E39;--sea:#79B6E2;--bou:#EE5E97;--bous:#3A1828;--ok:#6CC28F;--warn:#E3A84A;--bad:#F08A80;color-scheme:dark}
 </style>
+  <script>try{var t=localStorage.getItem("costaTheme")==="dark"?"dark":"light";document.documentElement.classList.add(t);document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute("content",t==="dark"?"#0A1820":"#F5F7F7")})}catch(e){document.documentElement.classList.add("light")}</script>
 </head>
 <body>
 <main>
